@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mineseeper</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" href="css/minesweeper-style.css?v=1.0">
+  <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Minesweeper</h1>
+    <nav>
+      <ol>
+        <li class="level" data-level="5">
+          5 x 5
+        </li>
+        <li class="level" data-level="9">
+          9 x 9
+        </li>
+        <li class="level" data-level="16">
+          16 x 16
+        </li>
+      </ol>
+    </nav>
+  </header>
+  <div id="new-game">
+      <p>☻</p>
+  </div>
+  <div id="gameboard">
+    <!-- <table>
+      <tr>
+        <td class="field before"></td>
+        <td><a class="field after"></td>
+        <td><a class="field after bomb"></td>
+        <td class="field before"></td>
+        <td class="field before"></td>
+      <tr>
+      <tr>
+        <td class="field before"></td>
+        <td><a class="field after"></td>
+        <td class="field before"></td>
+        <td class="field before"></td>
+        <td class="field before"></td>
+      <tr>
+      <tr>
+        <td class="field before"></td>
+        <td><a class="field after"></td>
+        <td class="field before"></td>
+        <td class="field before"></td>
+        <td class="field before"></td>
+      <tr>
+      <tr>
+        <td class="field before"></td>
+        <td><a class="field after"></td>
+        <td class="field before"></td>
+        <td class="field before"></td>
+        <td class="field before"></td>
+      <tr>
+      <tr>
+        <td class="field before"></td>
+        <td><a class="field after"></td>
+        <td class="field before"></td>
+        <td class="field before"></td>
+        <td class="field before"></td>
+      <tr>
+    </table> -->
+  </div>
+  <div class="gameover-dialog hide">
+    <p class="bomb">BOMB!!!</p>
+    <p class="gameover">GAME OVER</p>
+  </div>
+  <div class="youwon-dialog hide">
+    <p>YOU WON</p>
+  </div>
+  <script src="js/minesweeper.js"></script>
+</body>
+</html>

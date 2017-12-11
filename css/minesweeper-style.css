@@ -1,0 +1,170 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  background-image: url("../img/yellow.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  background: rgba(180, 230, 200, 0.2);
+  border-bottom: 1px solid #C8EFEA;
+  text-align: left;
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-weight: bold;
+  color: #000;
+  text-shadow: #D1F1CC 1px 1px 0px, #D1F1CC -1px 1px 0px,
+               #D1F1CC 1px -1px 0px, #D1F1CC -1px -1px 0px;
+
+}
+body > header h1:hover {
+  text-shadow: #F4D2DE 1px 1px 0px, #F4D2DE -1px 1px 0px,
+               #F4D2DE 1px -1px 0px, #F4D2DE -1px -1px 0px;
+  transition: text-shadow 3s;
+}
+
+body > header * {
+  display: inline-block;
+}
+body > header nav {
+  margin-left: 30px;
+}
+body > header nav li {
+  width: 70px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+body > header nav li:hover {
+  text-shadow: #F4D2DE 1px 1px 0px, #F4D2DE -1px 1px 0px,
+               #F4D2DE 1px -1px 0px, #F4D2DE -1px -1px 0px;
+
+}
+body > header nav li:active {
+  text-shadow: #F4D2DE 1px 1px 0px, #F4D2DE -1px 1px 0px,
+               #F4D2DE 1px -1px 0px, #F4D2DE -1px -1px 0px;
+
+}
+body > header > h1 {
+  font-size: 40px;
+}
+#new-game {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 30pt;
+  color: #000;
+  text-shadow: #D1F1CC 1px 1px 0px, #D1F1CC -1px 1px 0px,
+               #D1F1CC 1px -1px 0px, #D1F1CC -1px -1px 0px;
+  background-color: inherit;
+  cursor: pointer;
+}
+#new-game:hover {
+  text-shadow: #F8D32F 1px 1px 0px, #F8D32F -1px 1px 0px,
+               #F8D32F 1px -1px 0px, #F8D32F -1px -1px 0px;
+
+}
+#new-game p {
+  width: 100%;
+  height: 100%;
+}
+#gameboard {
+  width: 100%;
+  height: auto;
+}
+#gameboard > * {
+  margin: auto;
+}
+#gameboard table {
+  border: 1px solid gray;
+}
+#gameboard td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  text-align: center;
+  color: #000;
+  font-weight:lighter;
+  text-shadow: 0.5px 0.5px 0.5px #C8EFEA,
+                -0.5px 0.5px 0.5px #C8EFEA,
+                0.5px -0.5px 0.5px #C8EFEA,
+                -0.5px -0.5px 0.5px #C8EFEA;
+}
+#gameboard td.suspect {
+  background-color: #DCE626;
+  background-image: url("../img/flag.png");
+  background-size: contain;
+}
+#gameboard .field {
+  cursor: pointer;
+}
+#gameboard .field.before {
+  background-color: #68CFC3;
+}
+#gameboard .field.before:hover {
+  background-color: #1DAF9E;
+}
+#gameboard .field.after {
+  background-color: #FEF7D5;
+  border: 1px dotted gray;
+}
+#gameboard .field.after:hover {
+  background-color: #FEF7D5;
+}
+#gameboard .field.after.mine {
+  background-color: #E6007B;
+}
+.gameover-dialog {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: auto;
+}
+.bomb {
+  font-size: 80px;
+  font-weight: bold;
+  transform: rotate(-10deg);
+  text-shadow: 0.5px 0.5px 0.5px #C8EFEA,
+                -0.5px 0.5px 0.5px #C8EFEA,
+                0.5px -0.5px 0.5px #C8EFEA,
+                -0.5px -0.5px 0.5px #C8EFEA;
+}
+.gameover {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 0.5px #C8EFEA,
+                -0.5px 0.5px 0.5px #C8EFEA,
+                0.5px -0.5px 0.5px #C8EFEA,
+                -0.5px -0.5px 0.5px #C8EFEA;
+
+}
+.youwon-dialog {
+  position: absolute;;
+  top: 50%;
+  width: 100%;
+  height: auto;
+}
+.youwon-dialog p {
+  margin-top: 10px;
+  font-size: 80px;
+  font-weight: bold;
+  transform: rotate(-10deg);
+  text-shadow: 0.5px 0.5px 0.5px #C8EFEA,
+                -0.5px 0.5px 0.5px #C8EFEA,
+                0.5px -0.5px 0.5px #C8EFEA,
+                -0.5px -0.5px 0.5px #C8EFEA;
+}
+
+.hide {
+  display: none;
+}
