@@ -457,7 +457,7 @@ body {
   position: relative;
   background-image: url("../img/yellow.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
 }
 header {
